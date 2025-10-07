@@ -1,3 +1,4 @@
+import { AnimatedList } from "@/components/magicui/animated-list";
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { GridPattern } from "@/components/magicui/grid-pattern";
@@ -80,6 +81,24 @@ const highlights = [
   },
 ] as const;
 
+const salesMessages = [
+  {
+    id: "sale-1",
+    title: "You just made a sale!",
+    description: "🎉 Nice work, that listing didn’t stay up for long!",
+  },
+  {
+    id: "sale-2",
+    title: "Another one sold!",
+    description: "🙌 Looks like your hustle is paying off. Keep it going with Vendoo Go.",
+  },
+  {
+    id: "sale-3",
+    title: "Cha-ching! Your item just sold.",
+    description: "🤑 That’s the sound of progress. Time to celebrate your latest sale!",
+  },
+] as const;
+
 export default function Home() {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-12 px-6 py-16 sm:py-20 lg:py-24">
@@ -114,6 +133,22 @@ export default function Home() {
             </Button>
           </div>
         </div>
+      </section>
+
+      <section className="grid gap-8 rounded-3xl border border-border/60 bg-background/80 p-8 shadow-sm lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="flex flex-col gap-4">
+          <span className="inline-flex w-fit items-center justify-center rounded-full border border-border/60 bg-background/90 px-4 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
+            Activity spotlight
+          </span>
+          <h2 className="text-balance text-3xl font-semibold leading-tight tracking-tight text-foreground sm:text-4xl">
+            Keep momentum with an animated sales feed
+          </h2>
+          <p className="max-w-xl text-balance text-base text-muted-foreground sm:text-lg">
+            Magic UI’s animated list is perfect for showcasing real-time wins. Drop in your activity data and let subtle motion
+            draw attention to what matters most.
+          </p>
+        </div>
+        <AnimatedList items={salesMessages} className="lg:ml-auto lg:max-w-md" />
       </section>
 
       <section className="grid gap-6 md:grid-cols-3">
