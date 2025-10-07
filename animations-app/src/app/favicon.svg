@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#5F2EEA" />
+  <g fill="#12C9C0">
+    <rect x="10" y="24" width="6" height="2.6" rx="1.3" />
+    <rect x="10" y="29" width="8" height="2.6" rx="1.3" />
+    <rect x="10" y="34" width="5" height="2.6" rx="1.3" />
+    <path
+      d="M22 18c-6.627 0-12 5.373-12 12s5.373 12 12 12h10c2.761 0 5-2.239 5-5s-2.239-5-5-5h-10c-2.209 0-4-1.791-4-4s1.791-4 4-4h15v6h-7c-1.657 0-3 1.343-3 3s1.343 3 3 3h7c5.523 0 10-4.477 10-10v-8H22Z"
+    />
+    <path
+      d="M46 18c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12S52.627 18 46 18Zm0 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z"
+    />
+    <path d="M50 26.5 48 29l2 2.5 2-2.5-2-2.5Z" />
+    <path d="M54 26.5 52 29l2 2.5 2-2.5-2-2.5Z" />
+  </g>
+  <text
+    x="32"
+    y="53"
+    fill="#F5F5F5"
+    font-size="8"
+    font-family="'Montserrat', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="600"
+    letter-spacing="2.5"
+    text-anchor="middle"
+  >
+    VENDOO
+  </text>
+</svg>
